@@ -28,8 +28,8 @@ public class Livro {
     @Column(name = "pk_livro")
     private Integer id;
 
-    @Column(name = "nome", nullable = false, length = 100)
-    private String nome;
+    @Column(name = "titulo", nullable = false, length = 100)
+    private String titulo;
 
     @Column(name = "descricao", nullable = false, length = 255)
     private String descricao;
@@ -43,8 +43,8 @@ public class Livro {
     @Column(name = "editora", nullable = false, length = 100)
     private String editora;
 
-    @Column(name = "ano", nullable = false, length = 4)
-    private String ano;
+    @Column(name = "ano_publicacao", nullable = false, length = 4)
+    private Integer ano;
 
     @ManyToOne
     @JoinColumn(name = "fk_categoria")
